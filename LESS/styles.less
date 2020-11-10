@@ -1,0 +1,180 @@
+@lightColor: #f8f8f8;
+@pinkColor: #fc5b62;
+@md-padding: 10px;
+@lightgray: #d3d3d3;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero_demo.jpg");
+    height: 600px;
+    background-size: cover;
+
+    .panagea-logo {
+        position: absolute;
+        padding-top: @md-padding;
+        padding-left: @md-padding;
+    }
+
+    .info-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: @lightColor;
+
+        .btns {
+            margin-top: 40px;
+            display: inline-block;
+        }
+
+        .first-btn {
+            color: @lightColor;
+            background-color: @pinkColor;
+            cursor: pointer;
+            width: 180px;
+            height: 48px;
+        }
+
+        .second-btn {
+            color: @lightColor;
+            background-color: transparent;
+            border: 1px solid @lightColor;
+            width: 180px;
+            height: 48px;
+        }
+    }
+}
+
+.main-info {
+    text-align: center;
+
+    .demos-list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        .other-demos {
+            text-decoration: none;
+            color: #000;
+            height: 490px;
+            width: 350px;
+
+            .placeholder {
+                height: 85%;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 5px;
+                box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
+            }
+
+            .img-item {
+                width: 100%;
+            }
+
+            .demos-text {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+.premium-templates {
+
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 60px;
+    padding-bottom: 160px;
+
+    .h2-custom {
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .inner-slides {
+        margin: 4px;
+    }
+
+    .img-template-item {
+        width: 100%;
+    }
+
+    .dots {
+        text-align: center;
+        max-height: 20px;
+        overflow: hidden;
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #d3d0d0;
+            border-radius: 50%;
+            margin-left: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+.btn-container {
+    position: absolute;
+    right: 100px;
+    padding-top: 36px;
+
+    .view-portfolio-btn {
+        color: @lightColor;
+        background-color: @pinkColor;
+        position: relative;
+        padding: 13px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+}
+
+.footer-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.divider {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &:before {
+        background: @pinkColor;
+        content: "";
+        display: block;
+        position: absolute;
+        box-sizing: content-box;
+        left: calc(50% - 60px);
+        width: 60px;
+        height: 2px;
+        border-left: 30px solid @lightgray;
+        border-right: 30px solid @lightgray;
+    }
+}
+
+#btn-scroll {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
